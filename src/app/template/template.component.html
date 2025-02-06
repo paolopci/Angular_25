@@ -1,0 +1,23 @@
+<div>
+    <button class="btn btn-warning" (click)="check()">Check</button>
+</div>
+<ng-container *ngIf="isAuthorize; else notAuthorize">
+    <p>Authorized User!!</p>
+</ng-container>
+
+<ng-template #notAuthorize>
+    <h2>Not Authorized User!!</h2>
+</ng-template>
+
+<br>
+<hr>
+<br>
+
+<ng-container *ngIf="elements.length > 0; else noItems">
+    <ul>
+        <li *ngFor="let item of elements">{{item}}</li>
+    </ul>
+</ng-container>
+<ng-template #noItems>
+    <p>No items!!!!</p>
+</ng-template>

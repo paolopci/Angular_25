@@ -1,0 +1,27 @@
+<div>
+    <div class="card" ngClass="cardStyle">
+        <form>
+            <h1>Login</h1>
+            <br>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" required [(ngModel)]="nm"
+                    [ngStyle]="{'background-color':nm?'lightgreen':'#ffb6c1'}">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" required [(ngModel)]="em"
+                    [ngStyle]="{'background-color': emailIsValid ? 'lightgreen' : '#ffb6c1'}"
+                    (input)="checkEmailIsValid(em)">
+            </div>
+            <div class="text-center" style="margin-top: 5px;">
+                <button class="btn btn-success" type="submit" (click)="showMessage()"
+                    [disabled]="disableBtn()">Submit</button>
+            </div>
+        </form>
+    </div>
+    <p *ngIf="formSubmitted">
+        Form inviata correttamente!
+    </p>
+</div>

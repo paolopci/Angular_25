@@ -1,0 +1,21 @@
+.cardStyle {
+    width: 350px;
+    height: 350px;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 0 40px;
+    font-weight: bold;
+}
+
+input {
+    margin: 0 40px;
+    width: 70%;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5px;
+}

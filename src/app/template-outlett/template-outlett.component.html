@@ -1,0 +1,30 @@
+<ng-template #show let-msg="showmessage">
+    <p style="font-size: 25px;">Somma: {{msg}}</p>
+</ng-template>
+<ng-container *ngTemplateOutlet="show; context:{showmessage:calc()}">
+
+</ng-container>
+
+
+
+
+
+
+<!-- Passo un object -->
+<ng-container *ngTemplateOutlet="obj; context:{datiPersona:person}">
+
+</ng-container>
+
+<ng-template #obj let-user="datiPersona">
+    <p style="font-size: 25px;">nome: {{user.name}}, cognome: {{user.cognome}}, eta: {{user.age}} anni. </p>
+</ng-template>
+
+
+<!-- Passo un object -->
+<ng-container *ngTemplateOutlet="obj3; context:{$implicit:person}">
+
+</ng-container>
+
+<ng-template #obj3 let-user>
+    <p style="font-size: 25px;">nome: {{user.name}}, cognome: {{user.cognome}}, eta: {{user.age}} anni. </p>
+</ng-template>

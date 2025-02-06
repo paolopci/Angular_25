@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { AfterContentInit, Component, signal } from '@angular/core';
 
 
 interface Iemployee {
@@ -12,7 +12,7 @@ interface Iemployee {
     templateUrl: './app.component.html',
     styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent implements AfterContentInit {
 
     // updateClass = 'updateClass italicText upperCaseText';
 
@@ -21,6 +21,8 @@ export class AppComponent {
     user = {
         name: 'Paolo Paci'
     };
+
+    dataFromParent = '';
 
     applyCardStyle = {
         'font-size': '25px',
@@ -55,6 +57,15 @@ export class AppComponent {
 
     updateUser() {
         this.user.name = 'Paolo Paci - Via del Canarino, 5 61122 Pesaro';
+    }
+
+    ngAfterContentInit(): void {
+        console.log('ngAfterContentInit was invoked...');
+    }
+
+    sendDataToChild() {
+        let random = Math.floor(Math.random() * 10);
+        this.dataFromParent = 'Random Number: ' + random;
     }
 
 

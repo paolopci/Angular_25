@@ -26,6 +26,7 @@
 <!-- <button class="btn btn-danger" (click)="updateValue()">Update</button> -->
 
 <div class="center">
+
     <!-- <app-login></app-login> -->
     <!-- <app-container></app-container> -->
     <!-- <app-template></app-template> -->
@@ -33,6 +34,20 @@
     <!-- <app-hook01></app-hook01> -->
     <!-- <app-changeshook [inputValue]="initialValue"></app-changeshook> -->
     <!-- <app-on-inithook></app-on-inithook> -->
-    <button class="btn btn-warning" (click)="updateUser()">Update User</button>
-    <app-do-check [user]="user"></app-do-check>
+
+    <!-- <button class="btn btn-warning" (click)="updateUser()">Update User</button>
+    <app-do-check [user]="user"></app-do-check> -->
+    <div>
+        <h2>Component Updation Hooks</h2>
+        <div>
+            <h3>Parent Component</h3>
+            <button class="btn btn-success" (click)="sendDataToChild()">Generate Number</button>
+
+            <app-after-content-init-hook>
+                <h3 style="background-color: yellow;font-size: 25px;color: red;">{{dataFromParent}}</h3>
+            </app-after-content-init-hook>
+        </div>
+
+    </div>
+
 </div>

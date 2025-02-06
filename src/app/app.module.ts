@@ -16,6 +16,7 @@ import { Hook01Component } from './hook01/hook01.component';
 import { ChangeshookComponent } from './hook/changeshook/changeshook.component';
 import { OnInithookComponent } from './hook/on-inithook/on-inithook.component';
 import { DoCheckComponent } from './hook/do-check/do-check.component';
+import { AfterContentInitHookComponent } from './hook/after-content-init-hook/after-content-init-hook.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { DoCheckComponent } from './hook/do-check/do-check.component';
         Hook01Component,
         ChangeshookComponent,
         OnInithookComponent,
-        DoCheckComponent
+        DoCheckComponent,
+        AfterContentInitHookComponent
     ],
     imports: [
         BrowserModule,

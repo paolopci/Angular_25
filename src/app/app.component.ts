@@ -18,6 +18,9 @@ export class AppComponent {
 
     cardColor: string = 'lightColor';
     initialValue: string = 'New Value ...';
+    user = {
+        name: 'Paolo Paci'
+    };
 
     applyCardStyle = {
         'font-size': '25px',
@@ -48,6 +51,10 @@ export class AppComponent {
 
     updateValue() {
         this.initialValue = 'Update Initial Value ...#';
+    }
+
+    updateUser() {
+        this.user.name = 'Paolo Paci - Via del Canarino, 5 61122 Pesaro';
     }
 
 

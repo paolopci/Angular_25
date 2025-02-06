@@ -60,7 +60,7 @@ export class AppComponent implements AfterContentInit {
     }
 
     ngAfterContentInit(): void {
-        console.log('ngAfterContentInit was invoked...');
+        // console.log('ngAfterContentInit was invoked...');
     }
 
     sendDataToChild() {

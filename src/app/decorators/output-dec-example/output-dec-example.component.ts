@@ -8,10 +8,22 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 export class OutputDecExampleComponent {
 
-
   @Output() myEvent = new EventEmitter();
+  @Output() myEventUser = new EventEmitter();
+
+  user: {
+    id: number, firstName: string, lastName: string
+  } = {
+      id: 100,
+      firstName: 'Paolo',
+      lastName: 'Paci'
+    };
 
   emettiEvento() {
     this.myEvent.emit('Event emitted from child component');
+  }
+
+  emettiUser() {
+    this.myEventUser.emit(this.user);
   }
 }

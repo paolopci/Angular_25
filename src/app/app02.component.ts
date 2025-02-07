@@ -15,8 +15,13 @@ export class App02Component {
   ]
 
   message: string = '';
+  user: any = {};
 
   receiveChildEvent(eventData: string) {
     this.message = eventData;
+  }
+
+  receiveUserEvent(eventUser: any) {
+    this.user = eventUser;
   }
 }

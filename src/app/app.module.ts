@@ -24,6 +24,10 @@ import { App03Component } from './app03.component';
 import { InpOutput03Component } from './decorators/inp-output-03/inp-output-03.component';
 import { App04Component } from './app04.component';
 import { ViewChild04Component } from './decorators/view-child04/view-child04.component';
+import { App05Component } from './app05.component';
+import { ContentChild05Component } from './decorators/content-child05/content-child05.component';
+import { App06Component } from './app06.component';
+import { HostBinding06Component } from './decorators/host-binding06/host-binding06.component';
 
 
 @NgModule({
@@ -45,7 +49,11 @@ import { ViewChild04Component } from './decorators/view-child04/view-child04.com
         App03Component,
         InpOutput03Component,
         App04Component,
-        ViewChild04Component
+        ViewChild04Component,
+        App05Component,
+        ContentChild05Component,
+        App06Component,
+        HostBinding06Component
     ],
     imports: [
         BrowserModule,
@@ -56,7 +64,7 @@ import { ViewChild04Component } from './decorators/view-child04/view-child04.com
     providers: [
         provideClientHydration()
     ],
-    bootstrap: [App04Component]
+    bootstrap: [App05Component]
 })
 export class AppModule {
 }

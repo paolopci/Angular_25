@@ -20,6 +20,8 @@ import { AfterContentInitHookComponent } from './hook/after-content-init-hook/af
 import { App02Component } from './app02.component';
 import { InputDecExampleComponent } from './decorators/input-dec-example/input-dec-example.component';
 import { OutputDecExampleComponent } from './decorators/output-dec-example/output-dec-example.component';
+import { App03Component } from './app03.component';
+import { InpOutput03Component } from './decorators/inp-output-03/inp-output-03.component';
 
 
 @NgModule({
@@ -37,7 +39,9 @@ import { OutputDecExampleComponent } from './decorators/output-dec-example/outpu
         AfterContentInitHookComponent,
         App02Component,
         InputDecExampleComponent,
-        OutputDecExampleComponent
+        OutputDecExampleComponent,
+        App03Component,
+        InpOutput03Component
     ],
     imports: [
         BrowserModule,
@@ -48,7 +52,7 @@ import { OutputDecExampleComponent } from './decorators/output-dec-example/outpu
     providers: [
         provideClientHydration()
     ],
-    bootstrap: [App02Component]
+    bootstrap: [App03Component]
 })
 export class AppModule {
 }

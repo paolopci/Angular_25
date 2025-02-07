@@ -22,6 +22,8 @@ import { InputDecExampleComponent } from './decorators/input-dec-example/input-d
 import { OutputDecExampleComponent } from './decorators/output-dec-example/output-dec-example.component';
 import { App03Component } from './app03.component';
 import { InpOutput03Component } from './decorators/inp-output-03/inp-output-03.component';
+import { App04Component } from './app04.component';
+import { ViewChild04Component } from './decorators/view-child04/view-child04.component';
 
 
 @NgModule({
@@ -41,7 +43,9 @@ import { InpOutput03Component } from './decorators/inp-output-03/inp-output-03.c
         InputDecExampleComponent,
         OutputDecExampleComponent,
         App03Component,
-        InpOutput03Component
+        InpOutput03Component,
+        App04Component,
+        ViewChild04Component
     ],
     imports: [
         BrowserModule,
@@ -52,7 +56,7 @@ import { InpOutput03Component } from './decorators/inp-output-03/inp-output-03.c
     providers: [
         provideClientHydration()
     ],
-    bootstrap: [App03Component]
+    bootstrap: [App04Component]
 })
 export class AppModule {
 }

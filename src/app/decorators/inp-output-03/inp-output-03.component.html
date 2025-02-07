@@ -4,8 +4,9 @@
     </div>
     <div class="card-body">
         <ul>
-            <li *ngFor="let item of items">
+            <li *ngFor="let item of items; let i = index">
                 {{item}}
+                <button class="btn btn-danger" (click)="deleteIndex(i)">Delete</button>
             </li>
         </ul>
     </div>

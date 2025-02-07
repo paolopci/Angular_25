@@ -19,6 +19,7 @@ import { DoCheckComponent } from './hook/do-check/do-check.component';
 import { AfterContentInitHookComponent } from './hook/after-content-init-hook/after-content-init-hook.component';
 import { App02Component } from './app02.component';
 import { InputDecExampleComponent } from './decorators/input-dec-example/input-dec-example.component';
+import { OutputDecExampleComponent } from './decorators/output-dec-example/output-dec-example.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { InputDecExampleComponent } from './decorators/input-dec-example/input-d
         DoCheckComponent,
         AfterContentInitHookComponent,
         App02Component,
-        InputDecExampleComponent
+        InputDecExampleComponent,
+        OutputDecExampleComponent
     ],
     imports: [
         BrowserModule,

@@ -13,4 +13,10 @@ export class App02Component {
     { id: 3, name: 'Html, css, sass, bootstrap' },
     { id: 4, name: 'React course' }
   ]
+
+  message: string = '';
+
+  receiveChildEvent(eventData: string) {
+    this.message = eventData;
+  }
 }

@@ -17,6 +17,20 @@ import { ChangeshookComponent } from './hook/changeshook/changeshook.component';
 import { OnInithookComponent } from './hook/on-inithook/on-inithook.component';
 import { DoCheckComponent } from './hook/do-check/do-check.component';
 import { AfterContentInitHookComponent } from './hook/after-content-init-hook/after-content-init-hook.component';
+import { App02Component } from './app02.component';
+import { InputDecExampleComponent } from './decorators/input-dec-example/input-dec-example.component';
+import { OutputDecExampleComponent } from './decorators/output-dec-example/output-dec-example.component';
+import { App03Component } from './app03.component';
+import { InpOutput03Component } from './decorators/inp-output-03/inp-output-03.component';
+import { App04Component } from './app04.component';
+import { ViewChild04Component } from './decorators/view-child04/view-child04.component';
+import { App05Component } from './app05.component';
+import { ContentChild05Component } from './decorators/content-child05/content-child05.component';
+import { App06Component } from './app06.component';
+import { HostBinding06Component } from './decorators/host-binding06/host-binding06.component';
+import { HighlightElement06Directive } from './decorators/highlight-element06.directive';
+import { HostListener07Component } from './decorators/host-listener07/host-listener07.component';
+import { App07Component } from './app07.component';
 
 
 @NgModule({
@@ -31,7 +45,21 @@ import { AfterContentInitHookComponent } from './hook/after-content-init-hook/af
         ChangeshookComponent,
         OnInithookComponent,
         DoCheckComponent,
-        AfterContentInitHookComponent
+        AfterContentInitHookComponent,
+        App02Component,
+        InputDecExampleComponent,
+        OutputDecExampleComponent,
+        App03Component,
+        InpOutput03Component,
+        App04Component,
+        ViewChild04Component,
+        App05Component,
+        ContentChild05Component,
+        App06Component,
+        HostBinding06Component,
+        HighlightElement06Directive,
+        HostListener07Component,
+        App07Component
     ],
     imports: [
         BrowserModule,
@@ -42,7 +70,7 @@ import { AfterContentInitHookComponent } from './hook/after-content-init-hook/af
     providers: [
         provideClientHydration()
     ],
-    bootstrap: [AppComponent]
+    bootstrap: [App07Component]
 })
 export class AppModule {
 }

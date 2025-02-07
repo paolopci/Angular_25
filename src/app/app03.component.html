@@ -1,0 +1,7 @@
+<div class="container">
+    <h1>Parent Component</h1>
+    <button class="btn btn-success" (click)="addItem()">Add Item</button>
+    <br>
+    <app-inp-output-03 *ngIf="itemsArr.length>0" [items]="itemsArr"
+        (itemDeleted)="deleteItem($event)"></app-inp-output-03>
+</div>

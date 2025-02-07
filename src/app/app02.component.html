@@ -1,0 +1,32 @@
+<div class="container">
+    <!-- <div class="row">
+        <div class="col-5">
+            <h2>Data in Parent Component</h2>
+            <pre>{{courses | json}}</pre>
+        </div>
+        <div class="col-7" style="background-color: goldenrod;">
+            <app-input-dec-example [showData]="courses"></app-input-dec-example>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br> -->
+    <div class="row">
+        <app-output-dec-example (myEvent)="receiveChildEvent($event)"
+            (myEventUser)="receiveUserEvent($event)"></app-output-dec-example>
+        <div>
+            <h2>Parent Component</h2>
+            <p style="background-color: bisque; color: black; font-weight: bold; font-size: 20px;">message from child:
+                <abbr style="color:red"> {{message}}</abbr>
+            </p>
+            <br>
+            <h3>User</h3>
+            <div id="idUser">
+                <p>Id: {{user.id}}</p>
+                <p>Nome: {{user.firstName}}</p>
+                <p>Cognome: {{user.lastName}}</p>
+            </div>
+
+        </div>
+    </div>
+</div>

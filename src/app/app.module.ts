@@ -17,6 +17,8 @@ import { ChangeshookComponent } from './hook/changeshook/changeshook.component';
 import { OnInithookComponent } from './hook/on-inithook/on-inithook.component';
 import { DoCheckComponent } from './hook/do-check/do-check.component';
 import { AfterContentInitHookComponent } from './hook/after-content-init-hook/after-content-init-hook.component';
+import { App02Component } from './app02.component';
+import { InputDecExampleComponent } from './decorators/input-dec-example/input-dec-example.component';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { AfterContentInitHookComponent } from './hook/after-content-init-hook/af
         ChangeshookComponent,
         OnInithookComponent,
         DoCheckComponent,
-        AfterContentInitHookComponent
+        AfterContentInitHookComponent,
+        App02Component,
+        InputDecExampleComponent
     ],
     imports: [
         BrowserModule,
@@ -42,7 +46,7 @@ import { AfterContentInitHookComponent } from './hook/after-content-init-hook/af
     providers: [
         provideClientHydration()
     ],
-    bootstrap: [AppComponent]
+    bootstrap: [App02Component]
 })
 export class AppModule {
 }

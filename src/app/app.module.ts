@@ -28,6 +28,7 @@ import { App05Component } from './app05.component';
 import { ContentChild05Component } from './decorators/content-child05/content-child05.component';
 import { App06Component } from './app06.component';
 import { HostBinding06Component } from './decorators/host-binding06/host-binding06.component';
+import { HighlightElement06Directive } from './decorators/highlight-element06.directive';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { HostBinding06Component } from './decorators/host-binding06/host-binding
         App05Component,
         ContentChild05Component,
         App06Component,
-        HostBinding06Component
+        HostBinding06Component,
+        HighlightElement06Directive
     ],
     imports: [
         BrowserModule,
@@ -64,7 +66,7 @@ import { HostBinding06Component } from './decorators/host-binding06/host-binding
     providers: [
         provideClientHydration()
     ],
-    bootstrap: [App05Component]
+    bootstrap: [App06Component]
 })
 export class AppModule {
 }

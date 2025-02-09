@@ -1,0 +1,36 @@
+<div class="container">
+    <div>
+        <h1>User Information</h1>
+        <h4>Without JSON</h4>
+        <p>{{userDetails}}</p>
+        <h4>With JSON</h4>
+        <p>{{userDetails | json | uppercase}}</p>
+    </div>
+    <div>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Major</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for(item of students;track item){
+                <tr>
+                    <td>{{item.name}}</td>
+                    <td>{{item.age}}</td>
+                    <td>{{item.gender}}</td>
+                    <td>{{item.major}}</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+        <button (click)="convertToJson()">Json Format</button>
+    </div>
+    <div *ngIf="showJson">
+        <h2>JSON Format</h2>
+        <pre>{{students|json | titlecase}}</pre>
+    </div>
+</div>

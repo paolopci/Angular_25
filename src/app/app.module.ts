@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -32,6 +32,7 @@ import { HighlightElement06Directive } from './decorators/highlight-element06.di
 import { HostListener07Component } from './decorators/host-listener07/host-listener07.component';
 import { App07Component } from './app07.component';
 import { App08Component } from './pipes/parent/app08.component';
+import { App09Component } from './pipes/parent/app09.component';
 
 
 @NgModule({
@@ -61,7 +62,8 @@ import { App08Component } from './pipes/parent/app08.component';
         HighlightElement06Directive,
         HostListener07Component,
         App07Component,
-        App08Component
+        App08Component,
+        App09Component
     ],
     imports: [
         BrowserModule,
@@ -70,9 +72,10 @@ import { App08Component } from './pipes/parent/app08.component';
         FormsModule
     ],
     providers: [
-        provideClientHydration()
+        provideClientHydration(),
+        // { provide: LOCALE_ID, useValue: 'en' }
     ],
-    bootstrap: [App08Component]
+    bootstrap: [App09Component]
 })
 export class AppModule {
 }

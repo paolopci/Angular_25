@@ -35,6 +35,7 @@ import { App08Component } from './pipes/parent/app08.component';
 import { App09Component } from './pipes/parent/app09.component';
 import { App10Component } from './customPipes/parent/app10.component';
 import { AppendTextPipe } from './customPipes/pipes/append-text.pipe';
+import { SortNumbersPipe } from './customPipes/pipes/sort-numbers.pipe';
 
 
 @NgModule({
@@ -67,7 +68,8 @@ import { AppendTextPipe } from './customPipes/pipes/append-text.pipe';
         App08Component,
         App09Component,
         App10Component,
-        AppendTextPipe
+        AppendTextPipe,
+        SortNumbersPipe
     ],
     imports: [
         BrowserModule,
@@ -79,7 +81,7 @@ import { AppendTextPipe } from './customPipes/pipes/append-text.pipe';
         provideClientHydration(),
         // { provide: LOCALE_ID, useValue: 'en' }
     ],
-    bootstrap: [App09Component]
+    bootstrap: [App10Component]
 })
 export class AppModule {
 }

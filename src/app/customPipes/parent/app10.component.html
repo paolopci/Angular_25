@@ -1,5 +1,22 @@
 <div class="container">
-    <h1>Custom Pipe</h1>
-    <br>
-    <h2>{{'Paolo Paci -' |appendText:' Via del Canarino,n° 5'}}</h2>
+    <div>
+        <h1>Custom Pipe</h1>
+        <br>
+        <h2>{{'Paolo Paci -' |appendText:' Via del Canarino,n° 5'}}</h2>
+    </div>
+    <div>
+        <h1>Given Array: <span>[{{numbers}}]</span></h1>
+        <button class="btn btn-danger" (click)="sortOrder='asc'; showSorting()">Sort Ascending</button>
+        <button class="btn btn-warning" (click)="sortOrder='desc'; showSorting()">Sort Descending</button>
+        <div *ngIf="showList">
+            <h2 *ngIf="sortOrder==='asc'">Ascending Order</h2>
+            <h2 *ngIf="sortOrder==='desc'">Descending Order</h2>
+            <ul>
+                <li *ngFor="let num of sortedNumbers">
+                    {{num}}
+                </li>
+            </ul>
+        </div>
+
+    </div>
 </div>

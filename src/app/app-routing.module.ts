@@ -7,6 +7,8 @@ import { News12Component } from './routing/parent/news12/news12.component';
 import { Contact12Component } from './routing/parent/contact12/contact12.component';
 import { About12Component } from './routing/parent/about12/about12.component';
 import { Services12Component } from './routing/parent/services12/services12.component';
+import { EmployeeComponent } from './routing/parent/employee/employee.component';
+
 
 
 
@@ -18,6 +20,10 @@ const routes: Routes = [
   { path: 'contact', component: Contact12Component },
   { path: 'work', component: Work12Component },
   { path: 'services', component: Services12Component },
+  // { path: 'employee', component: EmployeeComponent },
+  { path: 'employee/:empName/:empId', component: EmployeeComponent },
+  { path: 'employee', component: EmployeeComponent },
+
 ];
 
 @NgModule({

@@ -43,6 +43,7 @@ import { Contact12Component } from './routing/parent/contact12/contact12.compone
 import { News12Component } from './routing/parent/news12/news12.component';
 import { Work12Component } from './routing/parent/work12/work12.component';
 import { Services12Component } from './routing/parent/services12/services12.component';
+import { EmployeeComponent } from './routing/parent/employee/employee.component';
 
 
 @NgModule({
@@ -83,7 +84,8 @@ import { Services12Component } from './routing/parent/services12/services12.comp
         Contact12Component,
         News12Component,
         Work12Component,
-        Services12Component
+        Services12Component,
+        EmployeeComponent
     ],
     imports: [
         BrowserModule,
@@ -95,7 +97,7 @@ import { Services12Component } from './routing/parent/services12/services12.comp
         provideClientHydration(),
         // { provide: LOCALE_ID, useValue: 'en' }
     ],
-    bootstrap: [App10Component]
+    bootstrap: [App12Component]
 })
 export class AppModule {
 }

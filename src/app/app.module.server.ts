@@ -12,12 +12,13 @@ import { App07Component } from './app07.component';
 import { App08Component } from './pipes/parent/app08.component';
 import { App09Component } from './pipes/parent/app09.component';
 import { App10Component } from './customPipes/parent/app10.component';
+import { App12Component } from './routing/parent/app12.component';
 
 @NgModule({
   imports: [
     AppModule,
     ServerModule,
   ],
-  bootstrap: [App10Component],
+  bootstrap: [App12Component],
 })
 export class AppServerModule { }

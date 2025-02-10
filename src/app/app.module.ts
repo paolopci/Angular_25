@@ -36,6 +36,8 @@ import { App09Component } from './pipes/parent/app09.component';
 import { App10Component } from './customPipes/parent/app10.component';
 import { AppendTextPipe } from './customPipes/pipes/append-text.pipe';
 import { SortNumbersPipe } from './customPipes/pipes/sort-numbers.pipe';
+import { App12Component } from './routing/parent/app12.component';
+import { Home12Component } from './routing/parent/home12/home12.component';
 
 
 @NgModule({
@@ -69,7 +71,9 @@ import { SortNumbersPipe } from './customPipes/pipes/sort-numbers.pipe';
         App09Component,
         App10Component,
         AppendTextPipe,
-        SortNumbersPipe
+        SortNumbersPipe,
+        App12Component,
+        Home12Component
     ],
     imports: [
         BrowserModule,

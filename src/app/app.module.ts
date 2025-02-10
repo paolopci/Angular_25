@@ -44,6 +44,7 @@ import { News12Component } from './routing/parent/news12/news12.component';
 import { Work12Component } from './routing/parent/work12/work12.component';
 import { Services12Component } from './routing/parent/services12/services12.component';
 import { EmployeeComponent } from './routing/parent/employee/employee.component';
+import { PageNotFoundComponent } from './routing/parent/page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -85,7 +86,8 @@ import { EmployeeComponent } from './routing/parent/employee/employee.component'
         News12Component,
         Work12Component,
         Services12Component,
-        EmployeeComponent
+        EmployeeComponent,
+        PageNotFoundComponent
     ],
     imports: [
         BrowserModule,

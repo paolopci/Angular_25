@@ -8,6 +8,7 @@ import { Contact12Component } from './routing/parent/contact12/contact12.compone
 import { About12Component } from './routing/parent/about12/about12.component';
 import { Services12Component } from './routing/parent/services12/services12.component';
 import { EmployeeComponent } from './routing/parent/employee/employee.component';
+import { PageNotFoundComponent } from './routing/parent/page-not-found/page-not-found.component';
 
 
 
@@ -23,6 +24,7 @@ const routes: Routes = [
   // { path: 'employee', component: EmployeeComponent },
   { path: 'employee/:empName/:empId', component: EmployeeComponent },
   { path: 'employee', component: EmployeeComponent },
+  { path: '**', component: PageNotFoundComponent },
 
 ];
 

@@ -38,6 +38,11 @@ import { AppendTextPipe } from './customPipes/pipes/append-text.pipe';
 import { SortNumbersPipe } from './customPipes/pipes/sort-numbers.pipe';
 import { App12Component } from './routing/parent/app12.component';
 import { Home12Component } from './routing/parent/home12/home12.component';
+import { About12Component } from './routing/parent/about12/about12.component';
+import { Contact12Component } from './routing/parent/contact12/contact12.component';
+import { News12Component } from './routing/parent/news12/news12.component';
+import { Work12Component } from './routing/parent/work12/work12.component';
+import { Services12Component } from './routing/parent/services12/services12.component';
 
 
 @NgModule({
@@ -73,7 +78,12 @@ import { Home12Component } from './routing/parent/home12/home12.component';
         AppendTextPipe,
         SortNumbersPipe,
         App12Component,
-        Home12Component
+        Home12Component,
+        About12Component,
+        Contact12Component,
+        News12Component,
+        Work12Component,
+        Services12Component
     ],
     imports: [
         BrowserModule,

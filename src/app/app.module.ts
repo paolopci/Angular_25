@@ -33,6 +33,9 @@ import { HostListener07Component } from './decorators/host-listener07/host-liste
 import { App07Component } from './app07.component';
 import { App08Component } from './pipes/parent/app08.component';
 import { App09Component } from './pipes/parent/app09.component';
+import { App10Component } from './customPipes/parent/app10.component';
+import { AppendTextPipe } from './customPipes/pipes/append-text.pipe';
+import { SortNumbersPipe } from './customPipes/pipes/sort-numbers.pipe';
 
 
 @NgModule({
@@ -63,7 +66,10 @@ import { App09Component } from './pipes/parent/app09.component';
         HostListener07Component,
         App07Component,
         App08Component,
-        App09Component
+        App09Component,
+        App10Component,
+        AppendTextPipe,
+        SortNumbersPipe
     ],
     imports: [
         BrowserModule,
@@ -75,7 +81,7 @@ import { App09Component } from './pipes/parent/app09.component';
         provideClientHydration(),
         // { provide: LOCALE_ID, useValue: 'en' }
     ],
-    bootstrap: [App09Component]
+    bootstrap: [App10Component]
 })
 export class AppModule {
 }

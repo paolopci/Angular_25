@@ -12,6 +12,7 @@ import { PageNotFoundComponent } from './routing/parent/page-not-found/page-not-
 import { App14Component } from './routing/parent/app14.component';
 import { Child14Component } from './routing/parent/child14/child14.component';
 import { Child14bComponent } from './routing/parent/child14b/child14b.component';
+import { Parent14Component } from './routing/parent/parent14.component';
 
 
 
@@ -27,14 +28,15 @@ const routes: Routes = [
   // { path: 'employee', component: EmployeeComponent },
   { path: 'employee/:empName/:empId', component: EmployeeComponent },
   { path: 'employee', component: EmployeeComponent },
-  { path: '**', component: PageNotFoundComponent },
+  { path: 'root14', component: App14Component },
   // Nested Routes
   {
-    path: 'parent14', component: App14Component, children: [
+    path: 'parent14', component: Parent14Component, children: [
       { path: 'child14', component: Child14Component },
       { path: 'child14B', component: Child14bComponent }
     ]
-  }
+  },
+  { path: '**', component: PageNotFoundComponent },
 
 ];
 

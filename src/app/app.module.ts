@@ -45,6 +45,8 @@ import { Work12Component } from './routing/parent/work12/work12.component';
 import { Services12Component } from './routing/parent/services12/services12.component';
 import { EmployeeComponent } from './routing/parent/employee/employee.component';
 import { PageNotFoundComponent } from './routing/parent/page-not-found/page-not-found.component';
+import { App14Component } from './routing/parent/app14.component';
+import { Child14Component } from './routing/parent/child14/child14.component';
 
 
 @NgModule({
@@ -87,7 +89,9 @@ import { PageNotFoundComponent } from './routing/parent/page-not-found/page-not-
         Work12Component,
         Services12Component,
         EmployeeComponent,
-        PageNotFoundComponent
+        PageNotFoundComponent,
+        App14Component,
+        Child14Component
     ],
     imports: [
         BrowserModule,
@@ -99,7 +103,7 @@ import { PageNotFoundComponent } from './routing/parent/page-not-found/page-not-
         provideClientHydration(),
         // { provide: LOCALE_ID, useValue: 'en' }
     ],
-    bootstrap: [App12Component]
+    bootstrap: [App14Component]
 })
 export class AppModule {
 }

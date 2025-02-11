@@ -36,6 +36,27 @@ import { App09Component } from './pipes/parent/app09.component';
 import { App10Component } from './customPipes/parent/app10.component';
 import { AppendTextPipe } from './customPipes/pipes/append-text.pipe';
 import { SortNumbersPipe } from './customPipes/pipes/sort-numbers.pipe';
+import { App12Component } from './routing/parent/app12.component';
+import { Home12Component } from './routing/parent/home12/home12.component';
+import { About12Component } from './routing/parent/about12/about12.component';
+import { Contact12Component } from './routing/parent/contact12/contact12.component';
+import { News12Component } from './routing/parent/news12/news12.component';
+import { Work12Component } from './routing/parent/work12/work12.component';
+import { Services12Component } from './routing/parent/services12/services12.component';
+import { EmployeeComponent } from './routing/parent/employee/employee.component';
+import { PageNotFoundComponent } from './routing/parent/page-not-found/page-not-found.component';
+import { App14Component } from './routing/parent/app14.component';
+import { Child14Component } from './routing/parent/child14/child14.component';
+import { Child14bComponent } from './routing/parent/child14b/child14b.component';
+import { Parent14Component } from './routing/parent/parent14.component';
+import { App15Component } from './routing/parent/app15.component';
+import { Products15Component } from './routing/parent/products15/products15.component';
+import { Contacts15Component } from './routing/parent/contacts15/contacts15.component';
+import { Pants15Component } from './routing/parent/pants15/pants15.component';
+import { Shoes15Component } from './routing/parent/shoes15/shoes15.component';
+import { Home15Component } from './routing/parent/home15/home15.component';
+import { About15Component } from './routing/parent/about15/about15.component';
+import { Shirts15Component } from './routing/parent/shirts15/shirts15.component';
 
 
 @NgModule({
@@ -69,7 +90,28 @@ import { SortNumbersPipe } from './customPipes/pipes/sort-numbers.pipe';
         App09Component,
         App10Component,
         AppendTextPipe,
-        SortNumbersPipe
+        SortNumbersPipe,
+        App12Component,
+        Home12Component,
+        About12Component,
+        Contact12Component,
+        News12Component,
+        Work12Component,
+        Services12Component,
+        EmployeeComponent,
+        PageNotFoundComponent,
+        App14Component,
+        Child14Component,
+        Child14bComponent,
+        Parent14Component,
+        App15Component,
+        Products15Component,
+        Contacts15Component,
+        Pants15Component,
+        Shoes15Component,
+        Home15Component,
+        About15Component,
+        Shirts15Component
     ],
     imports: [
         BrowserModule,
@@ -81,7 +123,7 @@ import { SortNumbersPipe } from './customPipes/pipes/sort-numbers.pipe';
         provideClientHydration(),
         // { provide: LOCALE_ID, useValue: 'en' }
     ],
-    bootstrap: [App10Component]
+    bootstrap: [App15Component]
 })
 export class AppModule {
 }

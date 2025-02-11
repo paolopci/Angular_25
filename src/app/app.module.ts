@@ -47,6 +47,7 @@ import { EmployeeComponent } from './routing/parent/employee/employee.component'
 import { PageNotFoundComponent } from './routing/parent/page-not-found/page-not-found.component';
 import { App14Component } from './routing/parent/app14.component';
 import { Child14Component } from './routing/parent/child14/child14.component';
+import { Child14bComponent } from './routing/parent/child14b/child14b.component';
 
 
 @NgModule({
@@ -91,7 +92,8 @@ import { Child14Component } from './routing/parent/child14/child14.component';
         EmployeeComponent,
         PageNotFoundComponent,
         App14Component,
-        Child14Component
+        Child14Component,
+        Child14bComponent
     ],
     imports: [
         BrowserModule,

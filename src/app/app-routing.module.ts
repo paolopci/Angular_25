@@ -13,6 +13,13 @@ import { App14Component } from './routing/parent/app14.component';
 import { Child14Component } from './routing/parent/child14/child14.component';
 import { Child14bComponent } from './routing/parent/child14b/child14b.component';
 import { Parent14Component } from './routing/parent/parent14.component';
+import { App15Component } from './routing/parent/app15.component';
+import { About15Component } from './routing/parent/about15/about15.component';
+import { Products15Component } from './routing/parent/products15/products15.component';
+import { Shirts15Component } from './routing/parent/shirts15/shirts15.component';
+import { Pants15Component } from './routing/parent/pants15/pants15.component';
+import { Shoes15Component } from './routing/parent/shoes15/shoes15.component';
+import { Contacts15Component } from './routing/parent/contacts15/contacts15.component';
 
 
 
@@ -36,6 +43,17 @@ const routes: Routes = [
       { path: 'child14B', component: Child14bComponent }
     ]
   },
+  //----------   multi-level menu
+  { path: 'home15', component: App15Component },
+  { path: 'about15', component: About15Component },
+  {
+    path: 'products15', component: Products15Component, children: [
+      { path: 'shirts15', component: Shirts15Component },
+      { path: 'pants15', component: Pants15Component },
+      { path: 'shoes15', component: Shoes15Component }
+    ]
+  },
+  { path: 'contacts15', component: Contacts15Component },
   { path: '**', component: PageNotFoundComponent },
 
 ];
